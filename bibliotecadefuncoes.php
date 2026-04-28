@@ -41,4 +41,25 @@ function areaCirculo($raio){
 function areaTrapezio($baseMaior, $baseMenor, $altura){
     return ($baseMaior + $baseMenor * $altura) / 2;}
     echo "\nA area do trapezio é: ", areaTrapezio(5, 2 ,2);
+
+namespace saude;
+function calcularimc($peso, $altura){
+    return $peso / ($altura * $altura);}
+    echo "\nO IMC é: ", calcularimc(93, 1.75);
+
+function valorIdealAgua($peso){
+    return $peso * 35;}
+    echo "\nA quantidade ideal de agua é: ", valorIdealAgua(5, 10);
+
+function frequenciaCardiacaMaxima($idade){
+    return 220 - $idade;}
+    echo "\nA frequencia cardiaca maxima é: ", frequenciaCardiacaMaxima(5, 5);
+
+function converterLibrasParaQuilo($libras){
+    return $libras * 0.453592;}
+    echo "\nO resultado da conversão de libras para quilos é: ", converterLibrasParaQuilo(2);
+
+function calcularCaloriasBasais($peso, $altura, $idade){
+    return 66.5 + (13.75 * $peso) + (5.003 * $altura) - (6.75 * $idade);}
+    echo "\ntaxa metabolica nasal é: ",  calcularCaloriasBasais(95, 1.75, 16);
 ?>
