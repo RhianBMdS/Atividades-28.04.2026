@@ -1,6 +1,6 @@
 <?php
 //ATIVIDADE - 1, 2
-namespace conversao;
+namespace conversao1;
 function converterD($valorD, $cotacaoR){
     return $valorD * $cotacaoR;}
     echo "O resultado da conversão de dólar para real é: ", converterD(2, 5);
@@ -21,7 +21,7 @@ function converterI($valorI, $cotacaoR){
     return $valorI * $cotacaoR;}
     echo "\nO resultado da conversão de iene para real é: ", converterI(2, 0.031);
 
-    namespace geometria;
+    namespace geometria1;
 function areaQuadrado($lado){
     return $lado * $lado;}
     echo "\nA area do quadrado é: ", areaQuadrado(5);
@@ -42,7 +42,7 @@ function areaTrapezio($baseMaior, $baseMenor, $altura){
     return ($baseMaior + $baseMenor * $altura) / 2;}
     echo "\nA area do trapezio é: ", areaTrapezio(5, 2 ,2);
 
-namespace saude;
+namespace saude1;
 function calcularimc($peso, $altura){
     return $peso / ($altura * $altura);}
     echo "\nO IMC é: ", calcularimc(93, 1.75);
@@ -62,4 +62,63 @@ function converterLibrasParaQuilo($libras){
 function calcularCaloriasBasais($peso, $altura, $idade){
     return 66.5 + (13.75 * $peso) + (5.003 * $altura) - (6.75 * $idade);}
     echo "\ntaxa metabolica nasal é: ",  calcularCaloriasBasais(95, 1.75, 16);
+
+
+
+
+
+
+namespace conversao; 
+function dolar(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  resultado da cotaçao de  100 dolares é  ", dolar(100,5,1), " reais"; 
+
+    
+    function peso(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  o resultado da cotaçao de 100 pesos é  ", peso(100,0.0035,1), " reais";
+
+      function libra(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  resultado da cotaçao de 100 libras é  ", libra(100,6.74,1), " reais"; 
+
+
+
+      function euro(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  resultado da cotaçao de 100 euros é  ", euro(100,5.85,1), " reais"; 
+
+
+
+      function iene(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  resultado  da cotaçao de 100 ienes é  ", iene(100,0.031,1), " reais ";
+
+
+
+namespace geometria;
+function dolar(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  resultado da cotaçao de  100 dolares é  ", dolar(100,5,1), " reais"; 
+
+    
+    function peso(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  o resultado da cotaçao de 100 pesos é  ", peso(100,0.0035,1), " reais";
+
+      function libra(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  resultado da cotaçao de 100 libras é  ", libra(100,6.74,1), " reais"; 
+
+
+
+      function euro(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  resultado da cotaçao de 100 euros é  ", euro(100,5.85,1), " reais"; 
+
+
+
+      function iene(  $valor, $cotacao, $real) {
+        return  $valor * ($cotacao * $real);}
+    echo"  resultado  da cotaçao de 100 ienes é  ", iene(100,0.031,1), " reais "; 
 ?>

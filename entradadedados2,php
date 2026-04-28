@@ -1,0 +1,56 @@
+<?php
+require_once ("bibliotecadefuncoes.php");
+use function conversao\dolar;
+use function conversao\euro;
+use function conversao\peso;
+use function conversao\libra;
+use function conversao\iene;
+echo "calculadora de conversão de moedas para o real :)","\n";
+echo "ESCOLHA UMA OPÇÃO DE MOEDA:", "\n";
+echo "---------------------------------------------", "\n";
+echo "1- Dolár Americano para Real", "\n";
+echo "2- Euro para Real", "\n";
+echo "3- Peso Argentino para Real", "\n";
+echo "4- Libra para Real", "\n";
+echo "5- Iene para Real", "\n";
+echo "6- Sair", "\n";
+echo "---------------------------------------------", "\n";
+$op = readline();
+switch ($op){
+    case 1:
+    $valor = readline("digite o seu valor em dólar: ");
+    $CotacaoDolar = readline("digite a cotação atual do dólar: ");
+        echo "Dolár para real: ", Dolar(100,5,1);
+        break;
+
+    case 2:
+    $valor = readline("digite o seu valor em Euro: ");
+    $CotacaoEuro = readline("digite a cotação atual do Euro: ");
+        echo "Euro para real: ", euro(100,5.85,1), " reais"; 
+        break;
+
+    case 3:
+    $valor = readline("digite o seu valor em Peso: ");
+    $CotacaoPeso = readline("digite a cotação atual do Peso: ");
+        echo "Peso para real: ", peso(100,0.0035,1), " reais"; 
+
+    case 4:
+    $valor = readline("digite o seu valor em Libra: ");
+    $CotacaoLibra = readline("digite a cotação atual do Libra: ");
+        echo "Libra para real: ", libra(100,6.74,1), " reais"; 
+
+    case 5:
+    $valor = readline("digite o seu valor em iene: ");
+    $CotacaoIene = readline("digite a cotação atual do Iene: ");
+        echo "Iene para real: ", iene(100,0.031,1), " reais"; 
+        break; 
+
+    case 6:
+        echo "saindo..... obrigado por usar minha calculadora :)";
+        break;
+
+    default:
+        echo "opção inválida";
+        break;
+}
+?>
